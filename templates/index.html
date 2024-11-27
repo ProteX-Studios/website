@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProteX Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #1e293b, #0f172a); /* Default fallback */
+      color: #e2e8f0;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #1f2937;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid #374151;
+    }
+
+    .navbar a {
+      color: #e2e8f0;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #60a5fa;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      flex: 1;
+      max-width: 30%;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .status {
+      font-weight: bold;
+    }
+
+    .status.online {
+      color: #22c55e;
+    }
+
+    .status.idle {
+      color: #facc15;
+    }
+
+    .status.offline {
+      color: #ef4444;
+    }
+
+    .link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Theme-specific styles */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(to right, #0f172a, #1e293b);
+        color: #e2e8f0;
+      }
+
+      .card {
+        background: linear-gradient(to bottom, #1f2937, #111827);
+        border: 1px solid #374151;
+      }
+
+      .link {
+        background: linear-gradient(to right, #3b82f6, #2563eb);
+        color: white;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background: linear-gradient(to right, #f8fafc, #e2e8f0);
+        color: #111827;
+      }
+
+      .card {
+        background: linear-gradient(to bottom, #e2e8f0, #f8fafc);
+        border: 1px solid #cbd5e1;
+      }
+
+      .link {
+        background: linear-gradient(to right, #2563eb, #1d4ed8);
+        color: white;
+      }
+    }
+
+    /* OS-specific styles */
+    @media screen and (device-width: 800px) { /* Example for Android/iPhone */
+      body {
+        background: linear-gradient(to right, #0f4c75, #1b262c);
+      }
+    }
+    section {
+            padding: 30px;
+            background-color: #333;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #ff6600;
+        }
+        section p {
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar flex justify-between items-center">
+    <a href="#" class="logo">ProteX</a>
+    <div>
+      <a href="tos.html" class="hover:text-blue-500">Terms of Service</a>
+    </div>
+  </div>
+  <header>
+    <h1>Welcome to ProteX Studios</h1>
+    <p>Your go-to source for innovative Discord bots, Python games, scripts, and web projects</p>
+</header>
+
+<section>
+    <h2>About ProteX Studios</h2>
+    <p>ProteX Studios is a dynamic development team committed to creating unique and engaging tech-driven solutions. We specialize in developing:</p>
+    
+    <h3>Discord Bots</h3>
+    <p>We build community-driven and admin-focused Discord bots that help users enhance their server experience. Our flagship bots include:</p>
+    <ul>
+        <li><strong>Volt</strong> - A community-driven bot with interactive features to engage users and provide useful tools.</li>
+        <li><strong>Fennix</strong> - An admin-focused bot designed to streamline server management and improve moderation.</li>
+        <li><strong>Skorch</strong> - A fun and creative sticker bot to add flair to your server and communication.</li>
+    </ul>
+
+    <h3>Python Games & Scripts</h3>
+    <p>We develop interactive Python-based games and custom scripts that bring fun and productivity together. From casual games to advanced tools, our creations are designed with user experience in mind.</p>
+    
+    <h3>Web Projects</h3>
+    <p>Our web-based projects range from sleek and efficient websites to interactive HTML-driven tools, all aimed at providing seamless digital experiences for our users.</p>
+</section>
+
+<footer>
+    <p>Join our community and help us shape the future of ProteX Studios!</p>
+</footer>
+</body>
+</html>
