@@ -1,0 +1,16 @@
+<form method="POST">
+    <label for="prefix">Prefix</label>
+    <input type="text" name="prefix" value="{{ bot_data['prefix'] }}" class="form-input">
+  
+    <label for="status_message">Status Message</label>
+    <input type="text" name="status_message" value="{{ bot_data['status_message'] }}" class="form-input">
+  
+    <label for="log_channel">Log Channel</label>
+    <input type="text" name="log_channel" value="{{ bot_data['log_channel'] }}" class="form-input">
+  
+    <label for="welcome_message">Welcome Message</label>
+    <textarea name="welcome_message" class="form-textarea">{{ bot_data['welcome_message'] }}</textarea>
+  
+    <button type="submit" class="btn btn-blue">Save Settings</button>
+  </form>
+  
